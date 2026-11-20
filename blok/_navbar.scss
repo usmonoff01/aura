@@ -1,0 +1,44 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &__list {
+    display: flex;
+    gap: 40px;
+  }
+  &__link {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 18px;
+
+    color: #101010;
+    &:hover{
+      color: rgb(114, 207, 15);
+    }
+  }
+  &__burgers{
+    display: none;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  &__burger {
+    width: 25px;
+    height: 3px;
+    background-color: #101010;
+  }
+}
+
+@media only screen and (max-width: 585px) {
+  .navbar {
+    &__list {
+      display: none;
+    }
+
+    &__burgers {
+      display: flex;
+    }
+  }
+}

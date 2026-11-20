@@ -1,0 +1,61 @@
+.eat {
+  margin-top: 20px;
+  &__cards__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__card {
+    width: 300px;
+    height: 280px;
+    background: #a7efd6;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  
+    &__img {
+      border-radius: 30px;
+      background-size: cover;
+      width: 280px;
+      height: 200px;
+
+    }
+    &__title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 18px;
+      color: rgb(255, 157, 0);
+    }
+    &__text {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 13px;
+      line-height: 18px;
+      color: rgb(255, 157, 0);
+    }
+  }
+  &__cards_bottom{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+
+@media only screen and (max-width: 1100px) {
+  .eat {
+    &__cards__top , &__cards_bottom {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}   
