@@ -15,7 +15,7 @@
     font-weight: 800;
     font-size: 20px;
     line-height: 24px;
-    color: rgb(226, 179, 5);
+    color: #D4A343;
   }
 }
 
@@ -23,6 +23,8 @@
 @media only screen and (max-width: 585px) {
   .about {
     flex-direction: column;
-    
+    &__img{
+      width: 350px;
+    }
   }
 }
